@@ -25,10 +25,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
-      run: npm install -g gh-pages
-
-    - name: Install React scripts
-      run: npm install react-scripts --save
+      run: npm install
 
     - name: Build
       run: npm run build
